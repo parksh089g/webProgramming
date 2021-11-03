@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>큰수</title>
+</head>
+<body>
+    <h3>큰 자리수와 낮은 자리수 같은지 비교</h3>
+    <hr>
+    <script>
+        let user = Number(prompt('숫자 입력',''));
+        let small = user%10;
+        let big = user;
+        while(big >=10){
+            big=Math.floor(big/10);
+        }
+        console.log(big,small)
+        if(small==big){
+            document.write(`${user}: 같음`);
+        }
+        else{
+            document.write(`${user}: 다름`)
+        }
+
+    </script>
+</body>
+</html>

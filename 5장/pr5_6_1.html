@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>이미지 회전</title>
+        <meta charset="utf-8">
+      
+        <style>
+            @keyframes rotate_img {
+                /* 25% {transform: rotate(90deg);}
+                50% {transform: rotate(180deg);}
+                75% {transform: rotate(270deg);} */
+                100% {transform: rotate(360deg);}
+            }
+            img {
+                /* animation-name: rotate_img;
+                animation-duration: 1s;
+                animation-iteration-count: infinite; */
+                animation: rotate_img 1s infinite;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>어지러워요</h3>
+        <hr>
+        <img src='./smaple.jpg' width="100px">
+        
+    </body>
+</html>

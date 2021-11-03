@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate</title>
+    <script>
+        let degree=0;
+        function rotate(obj){
+            degree=(degree+90)%360;
+            obj.style.transform=`rotate(${degree}deg)`;
+            // obj.style.transform="rotate(45deg)";
+        }
+    </script>
+</head>
+<body>
+    <h3>
+        클릭하면 90도 회전
+    </h3>
+    <hr>
+    <img src="../8장/8_3.jpg" width="100" alt="spongebob" onclick="rotate(this)">
+</body>
+</html>

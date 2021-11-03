@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방문 시간에 따라 변하는 배경색</title>
+</head>
+<body>
+    <h3>페이지 방문 초시간이 짝수면 violoet, 홀수이면 lightskyblue 배경</h3>
+    <hr>
+    <script>
+        let current=new Date();
+        if(current.getSeconds()%2==0){
+            document.body.style.backgroundColor='violet';
+        }
+        else{
+            document.body.style.backgroundColor='lightskyblue';
+        }
+        document.write('<hr>');
+        document.write(`현재 시간: ${current.getHours()}시 `)
+        document.write(`${current.getMinutes()}분 `)
+        document.write(`${current.getSeconds()}초`)
+        for(let i=0;i<5;i++){
+            arr.push(Number(prompt('정수 입력:','')));
+        }
+        
+    </script>
+</body>
+</html>
